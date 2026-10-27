@@ -1,0 +1,41 @@
+# Terraform working directories
+**/.terraform/
+
+# State files (may contain secrets; includes bootstrap local state)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Local/secret variable files (terraform.tfvars is intentionally tracked)
+*.auto.tfvars
+*.auto.tfvars.json
+secrets.tfvars
+*.secret.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Saved plans
+*.tfplan
+tfplan
+
+# CLI config
+.terraformrc
+terraform.rc
+
+# Env files and credentials
+.env
+.env.*
+*.pem
+*.key
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
